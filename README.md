@@ -14,3 +14,9 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 ### Images
 
 - <https://nextjs.org/docs/app/building-your-application/optimizing/images>
+
+### Data Fetching
+
+#### Parallel data fetching
+
+- pomocí `Promise.all()`
