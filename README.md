@@ -20,3 +20,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 #### Parallel data fetching
 
 - pomocí `Promise.all()`
+
+### Static vs Dynamic Rendering
+
+- data získaná z databáze jsou ve výchozím nastavení kešována.
+- cache můžeme zakázat pomocí fce `unstable_noStore` z `next/cache`
