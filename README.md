@@ -15,6 +15,13 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - <https://nextjs.org/docs/app/building-your-application/optimizing/images>
 
+### Routing
+
+### Route Groups
+
+- <https://nextjs.org/docs/app/building-your-application/routing/route-groups>
+- název adresáře dáme kulatých závorek. To se potom neprojeví v konstrukci url, ale můžeme organizovat soubory page.tsx, layout.tsx a loading.tsx do skupin. Definice v layout.tsx nebo loading.tsx potom neovlivní jinou skupinu.
+
 ### Data Fetching
 
 #### Parallel data fetching
@@ -25,3 +32,20 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - data získaná z databáze jsou ve výchozím nastavení kešována.
 - cache můžeme zakázat pomocí fce `unstable_noStore` z `next/cache`
+
+### Streaming
+
+#### pomocí `loading.tsx`
+
+- statické prvky jsou vykresleny
+- obsah loading.tsx je vykreslen než jsou načteny prvky dynamické
+
+##### loading skeletons
+
+- kostra ui definovaná v loading.tsx
+
+#### streaming component
+
+- komponentu, u které chceme vykreslit ui pro loading, obalíme do `<Suspense>`. Suspense potom předáme komponentu s ui pomocí atributu `fallback`
+- data potom načítáme přímo v komponentě
+- tato konstrukce nám umožní rychleji vykreslit části stránky, pro které data získáme rychle
