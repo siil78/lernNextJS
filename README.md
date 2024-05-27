@@ -49,3 +49,12 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - komponentu, u které chceme vykreslit ui pro loading, obalíme do `<Suspense>`. Suspense potom předáme komponentu s ui pomocí atributu `fallback`
 - data potom načítáme přímo v komponentě
 - tato konstrukce nám umožní rychleji vykreslit části stránky, pro které data získáme rychle
+
+### Search
+
+#### Debouncing
+
+- metoda, která zabrání dotaz na databázi při každé změně řetězce, které uživatel zadá do vyhledávacího pole
+- `npm i use-debounce`
+
+### Pagination
