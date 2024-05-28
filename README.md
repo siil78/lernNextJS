@@ -58,3 +58,14 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - `npm i use-debounce`
 
 ### Pagination
+
+### Mutating Data
+
+#### Server Actions
+
+##### FormData
+
+- `<form action={someServerAction}></form>` - html v atributu action volá funkci
+- `async functon someServerAction(formData: FormData) {}` - funkce přijímá objekt s daty z formuláře
+  - pro práci s objektem používáme různé metody <https://developer.mozilla.org/en-US/docs/Web/API/FormData/append>
+- server actions jsou `use server` fce, mohou proto volat i funkce týkající se cache `revalidateTag` nebo `revalidatePath`
