@@ -69,3 +69,18 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - `async functon someServerAction(formData: FormData) {}` - funkce přijímá objekt s daty z formuláře
   - pro práci s objektem používáme různé metody <https://developer.mozilla.org/en-US/docs/Web/API/FormData/append>
 - server actions jsou `use server` fce, mohou proto volat i funkce týkající se cache `revalidateTag` nebo `revalidatePath`
+
+### Handling Errors
+
+#### try,catch block
+
+- použijeme u dotazů na databázi při server actions
+
+#### error.tsx
+
+- ui pro uživatele při chybě
+
+#### 404
+
+- v page.tsx zavoláme fci `notFound()`
+- definujeme stránku `not-found.tsx`
